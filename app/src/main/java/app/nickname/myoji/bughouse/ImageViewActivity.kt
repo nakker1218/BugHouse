@@ -17,9 +17,8 @@ class ImageViewActivity : AppCompatActivity() {
         imageView.load("https://life-is-tech.com/materials/images/summer2019_desktop_3.jpg")
 
         getImageButton.setOnClickListener {
-            val intent = Intent(Intent.ACTION_CREATE_DOCUMENT)
+            val intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
             intent.type = "image/*"
-            intent.putExtra(Intent.EXTRA_TITLE, "sample_image.jpg")
             startActivityForResult(intent, 100)
         }
 

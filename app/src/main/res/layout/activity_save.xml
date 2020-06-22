@@ -7,26 +7,29 @@
     tools:context=".SaveActivity">
 
     <TextView
+        android:id="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:gravity="center"
         android:text="データを保存するアプリを作ろう！\nバグは5コ+αあるので探して直してみよう！"
         android:textColor="#DC000000"
         android:textSize="16sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="32dp" />
 
     <EditText
         android:id="@+id/input"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content" />
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="109dp" />
 
     <Button
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="保存" />
+        android:text="保存"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="170dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
