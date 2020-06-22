@@ -1,8 +1,9 @@
-package app.nickname.myoji.bughouse
+package app.nickname.myoji.bughouse.launcher
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import app.nickname.myoji.bughouse.*
 import kotlinx.android.synthetic.main.activity_launcher.*
 
 class LauncherActivity : AppCompatActivity() {
@@ -23,6 +24,11 @@ class LauncherActivity : AppCompatActivity() {
 
         loadActivityCell.setOnClickListener {
             val intent = Intent(this, LoadActivity::class.java)
+            startActivity(intent)
+        }
+
+        loadActivityCell.setOnClickListener {
+            val intent = Intent(this, ImageViewActivity::class.java)
             startActivity(intent)
         }
 

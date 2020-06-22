@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LauncherActivity">
+    tools:context=".launcher.LauncherActivity">
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -20,23 +20,29 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <app.nickname.myoji.bughouse.LauncherCellView
+            <app.nickname.myoji.bughouse.launcher.LauncherCellView
                 android:id="@+id/countActivityCell"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:title="Countアプリ" />
 
-            <app.nickname.myoji.bughouse.LauncherCellView
+            <app.nickname.myoji.bughouse.launcher.LauncherCellView
                 android:id="@+id/saveActivityCell"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:title="データを保存する" />
 
-            <app.nickname.myoji.bughouse.LauncherCellView
+            <app.nickname.myoji.bughouse.launcher.LauncherCellView
                 android:id="@+id/loadActivityCell"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:title="保存したデータを取得する" />
+
+            <app.nickname.myoji.bughouse.launcher.LauncherCellView
+                android:id="@+id/imageViewActivityCell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="画像を表示する" />
 
         </LinearLayout>
 

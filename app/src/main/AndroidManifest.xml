@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".CountActivity" />
         <activity android:name=".LoadActivity" />
-        <activity android:name=".LauncherActivity">
+        <activity android:name=".launcher.LauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
