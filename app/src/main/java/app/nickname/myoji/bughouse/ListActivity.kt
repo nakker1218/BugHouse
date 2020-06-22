@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_list.*
 
 class ListActivity : AppCompatActivity() {
-    private val taskList: List<Task> = listOf(
+    private val taskList: MutableList<Task> = mutableListOf(
         Task("Task 1"),
         Task("Task 2"),
         Task("Task 3")
