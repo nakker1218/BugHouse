@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_list.*
 
 class ListActivity : AppCompatActivity() {
-    private val taskList: List<Task> = listOf(
+    private val taskList: MutableList<Task> = mutableListOf(
         Task("Task 1"),
         Task("Task 2"),
         Task("Task 3")
@@ -21,10 +21,12 @@ class ListActivity : AppCompatActivity() {
             override fun onItemClick(position: Int) {
                 val intent = Intent(this@ListActivity, DetailActivity::class.java)
                 intent.putExtra("TASK_NAME", taskList[position].name)
+                startActivity(intent)
             }
         })
 
         recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = adapter
         adapter.addAll(taskList)
 
         addButton.setOnClickListener {
