@@ -15,6 +15,7 @@ import app.nickname.myoji.bughouse.R
 class LauncherCellView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0) : ConstraintLayout(context, attrs, defStyleAttr) {
     private val view: View = LayoutInflater.from(context).inflate(R.layout.view_launcher_cell, this, true)
     private val titleText: TextView = view.findViewById(R.id.title)
+    private val descriptionText: TextView = view.findViewById(R.id.description)
 
     private val Int.dp
         get() = this * Resources.getSystem().displayMetrics.density.toInt()
@@ -22,6 +23,7 @@ class LauncherCellView @JvmOverloads constructor(context: Context, attrs: Attrib
     init {
         context.obtainStyledAttributes(attrs, R.styleable.LauncherCellView, defStyleAttr, 0).apply {
             titleText.text = getString(R.styleable.LauncherCellView_title)
+            descriptionText.text = getString(R.styleable.LauncherCellView_description)
             recycle()
         }
         setBackgroundColor(ContextCompat.getColor(context, android.R.color.white))
@@ -34,6 +36,6 @@ class LauncherCellView @JvmOverloads constructor(context: Context, attrs: Attrib
         } else {
             background = selectableItemBackground
         }
-        minHeight = 56.dp
+        minHeight = 72.dp
     }
 }
