@@ -10,7 +10,6 @@ import android.view.View
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
-import androidx.core.content.res.use
 import app.nickname.myoji.bughouse.R
 
 class LauncherCellView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0) : ConstraintLayout(context, attrs, defStyleAttr) {
@@ -21,8 +20,9 @@ class LauncherCellView @JvmOverloads constructor(context: Context, attrs: Attrib
         get() = this * Resources.getSystem().displayMetrics.density.toInt()
 
     init {
-        context.obtainStyledAttributes(attrs, R.styleable.LauncherCellView, defStyleAttr, 0).use {
-            titleText.text = it.getString(R.styleable.LauncherCellView_title)
+        context.obtainStyledAttributes(attrs, R.styleable.LauncherCellView, defStyleAttr, 0).apply {
+            titleText.text = getString(R.styleable.LauncherCellView_title)
+            recycle()
         }
         setBackgroundColor(ContextCompat.getColor(context, android.R.color.white))
         val outValue = TypedValue()
