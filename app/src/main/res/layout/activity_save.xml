@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".SaveActivity">
 
-    <TextView
-        android:id="@+id/header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="データを保存するアプリを作ろう！\nバグは5コ+αあるので探して直してみよう！"
-        android:textColor="#DC000000"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="32dp" />
-
     <EditText
         android:id="@+id/input"
         android:layout_width="379dp"
