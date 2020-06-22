@@ -9,7 +9,7 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
-        val text = intent.getStringExtra("TODO_NAME")
+        val text = intent.getStringExtra("TASK_NAME")
         textView.text = text
 
         backButton.setOnClickListener {
