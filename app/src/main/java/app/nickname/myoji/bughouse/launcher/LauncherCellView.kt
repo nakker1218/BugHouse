@@ -1,4 +1,4 @@
-package app.nickname.myoji.bughouse
+package app.nickname.myoji.bughouse.launcher
 
 import android.content.Context
 import android.content.res.Resources
@@ -11,6 +11,7 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.use
+import app.nickname.myoji.bughouse.R
 
 class LauncherCellView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0) : ConstraintLayout(context, attrs, defStyleAttr) {
     private val view: View = LayoutInflater.from(context).inflate(R.layout.view_launcher_cell, this, true)
