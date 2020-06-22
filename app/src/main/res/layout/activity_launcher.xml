@@ -31,24 +31,28 @@
                 android:id="@+id/saveActivityCell"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:description="バグは5コあります"
                 app:title="データを保存する" />
 
             <app.nickname.myoji.bughouse.launcher.LauncherCellView
                 android:id="@+id/loadActivityCell"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:description="バグは4コあります"
                 app:title="保存したデータを取得する" />
 
             <app.nickname.myoji.bughouse.launcher.LauncherCellView
                 android:id="@+id/imageViewActivityCell"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:description="バグは5コあります"
                 app:title="画像を表示する" />
 
             <app.nickname.myoji.bughouse.launcher.LauncherCellView
                 android:id="@+id/listActivityCell"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:description="バグは5コあります"
                 app:title="Todoアプリを起動する" />
 
         </LinearLayout>
