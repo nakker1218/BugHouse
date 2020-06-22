@@ -32,6 +32,7 @@ class TaskAdapter(
     }
 
     fun addAll(items: List<Task>) {
+        this.items.clear()
         this.items.addAll(items)
         notifyDataSetChanged()
     }
