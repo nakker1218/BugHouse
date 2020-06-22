@@ -17,9 +17,8 @@ class ImageViewActivity : AppCompatActivity() {
         imageView.load("https://pbs.twimg.com/profile_images/1236506268367372288/G93_GujR_400x400.jpg")
 
         getImageButton.setOnClickListener {
-            val intent = Intent(Intent.ACTION_CREATE_DOCUMENT)
+            val intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
             intent.type = "image/*"
-            intent.putExtra(Intent.EXTRA_TITLE, "sample_image.jpg")
             startActivityForResult(intent, 100)
         }
 

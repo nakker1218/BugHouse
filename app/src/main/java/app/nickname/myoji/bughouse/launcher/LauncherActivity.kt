@@ -31,6 +31,5 @@ class LauncherActivity : AppCompatActivity() {
             val intent = Intent(this, ImageViewActivity::class.java)
             startActivity(intent)
         }
-
     }
 }
