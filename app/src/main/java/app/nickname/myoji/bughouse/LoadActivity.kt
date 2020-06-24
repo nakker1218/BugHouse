@@ -6,8 +6,8 @@ import kotlinx.android.synthetic.main.activity_count.*
 
 class LoadActivity : AppCompatActivity() {
 
-    override fun onResume() {
-        super.onResume()
+    override fun onDestroy() {
+        super.onDestroy()
         setContentView(R.layout.activity_load)
 
         val sharedPreferences = getSharedPreferences("Third", Context.MODE_PRIVATE)
